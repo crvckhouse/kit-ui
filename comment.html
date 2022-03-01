@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    
+
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="bootstrap.min(1).css">
   </head>
@@ -13,32 +13,71 @@
 
 <body>
 
-  <div class="card my-3 p-3 bg-white rounded box-shadow">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Recent comments</h6>
-    <div class="media text-muted pt-3">
-      <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <strong class="d-block text-gray-dark">@username</strong>
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
+  <div class="row bootstrap snippets m-5">
+    <div class="col-md-6 col-md-offset-2 col-sm-12">
+        <div class="comment-wrapper">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    Comment panel
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
+                    <br>
+                    <button type="button" class="btn btn-info pull-right">Post</button>
+                    <div class="clearfix"></div>
+                    <hr>
+                    <ul class="media-list">
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+                            </a>
+                            <div class="media-body">
+                                <span class="text-muted pull-right">
+                                    <small class="text-muted">30 min ago</small>
+                                </span>
+                                <strong class="text-success">@MartinoMont</strong>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Lorem ipsum dolor sit amet, <a href="#">#consecteturadipiscing </a>.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="img-circle">
+                            </a>
+                            <div class="media-body">
+                                <span class="text-muted pull-right">
+                                    <small class="text-muted">30 min ago</small>
+                                </span>
+                                <strong class="text-success">@LaurenceCorreil</strong>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Lorem ipsum dolor <a href="#">#ipsumdolor </a>adipiscing elit.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <a href="#" class="pull-left">
+                                <img src="https://bootdey.com/img/Content/user_3.jpg" alt="" class="img-circle">
+                            </a>
+                            <div class="media-body">
+                                <span class="text-muted pull-right">
+                                    <small class="text-muted">30 min ago</small>
+                                </span>
+                                <strong class="text-success">@JohnNida</strong>
+                                <p>
+                                    Lorem ipsum dolor <a href="#">#sitamet</a> sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="media text-muted pt-3">
-      <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <strong class="d-block text-gray-dark">@username</strong>
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <div class="media text-muted pt-3">
-      <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <strong class="d-block text-gray-dark">@username</strong>
-        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      </p>
-    </div>
-    <small class="d-block text-right mt-3">
-      <a href="#">All comments</a>
-    </small>
-  </div>
+</div>
+
 
 </body>
